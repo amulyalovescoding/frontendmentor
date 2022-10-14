@@ -46,6 +46,15 @@ i {
   padding: 0 7px;
 }
 
+.read {
+  font-size: small;
+}
+
+.read:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -62,6 +71,13 @@ i {
   cursor: pointer;
 }
 
+.marked, .opened {
+  background-color: #fff;
+}
+
+.red-dot {
+  margin-left: 5px;
+}
 .name {
   color: hsl(224, 21%, 14%);
 }
@@ -90,7 +106,10 @@ i {
 
 .message {
   padding: 5px;
-  background-color: hsl(210, 60%, 98%) !important;
+}
+
+.light {
+  font-size: small;
 }
 
 
@@ -104,9 +123,8 @@ i {
 
 
 
-
 .attribution {
-  color: #fff;
+  color: #BFBFBF;
   font-size: 0.6875rem;
   padding: 2.5rem 0 2.5rem 0;
   text-align: center;

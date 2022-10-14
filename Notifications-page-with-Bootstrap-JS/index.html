@@ -26,55 +26,54 @@
 </head>
 
 <body>
-
   <main>
 
     <section class="container my-3">
       <div class="notification-container" id="profile">
-        <h1>Notifications <span class="highlight">3</span></h1>
-        <span>Mark all as read</span>
+        <h1>Notifications <span class="highlight mark">3</span></h1>
+        <span class="read">Mark all as read</span>
       </div>
 
-      <div class="card" id="profile-1">
+      <div class="card unopened">
         <img class="profile-pic" src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber">
         <div class="comment">
           <strong class="name">Mark Webber</strong> reacted to your recent post <b>My first tournament today!</b>
-          <i class="fa-solid fa-circle"></i>
           <p class="light">1m ago</p>
         </div>
+        <div class="red-dot"><i class="fa-solid fa-circle"></i></div>
       </div>
 
-      <div class="card" id="profile-2">
+      <div class="card unopened">
         <img class="profile-pic" src="./assets/images/avatar-angela-gray.webp" alt="">
         <div class="comment">
           <strong class="name">Angela Gray</strong> followed you
-          <i class="fa-solid fa-circle"></i>
           <p class="light">5m ago</p>
         </div>
+        <div class="red-dot"><i class="fa-solid fa-circle"></i></div>
       </div>
 
-      <div class="card" id="profile-3">
+      <div class="card unopened">
         <img class="profile-pic" src="./assets/images/avatar-jacob-thompson.webp" alt="">
         <div class="comment">
           <strong class="name">Jacob Thompson</strong> has joined your group <b>Chess Club</b>
-          <i class="fa-solid fa-circle"></i>
           <p class="light">1 day ago</p>
         </div>
+        <div class="red-dot"><i class="fa-solid fa-circle"></i></div>
       </div>
 
-      <div class="card" id="profile-4">
+      <div class="card opened">
         <img class="profile-pic" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
         <div class="comment">
           <strong class="name">Rizky Hasanuddin</strong> sent you a private message
           <p class="light">5 days ago</p>
-          <div class="card message">
+          <div class="card opened message">
             <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
               I'm already having lots of fun and improving my game.</p>
           </div>
         </div>
       </div>
 
-      <div class="card" id="profile-5">
+      <div class="card opened">
         <img class="profile-pic" src="./assets/images/avatar-kimberly-smith.webp" alt="">
         <div class="comment">
           <strong class="name">Kimberly Smith</strong> commented on your picture <img src="" alt="">
@@ -83,7 +82,7 @@
         <img class="chess-pic" src="./assets/images/image-chess.webp" alt="">
       </div>
 
-      <div class="card" id="profile-6">
+      <div class="card opened">
         <img class="profile-pic" src="./assets/images/avatar-nathan-peterson.webp" alt="">
         <div class="comment">
           <strong class="name">Nathan Peterson</strong> reacted to your recent post <b>5 end-game strategies to increase your win rate</b>
@@ -91,7 +90,7 @@
         </div>
       </div>
 
-      <div class="card" id="profile-7">
+      <div class="card opened">
         <img class="profile-pic" src="./assets/images/avatar-anna-kim.webp" alt="">
         <div class="comment">
           <strong class="name">Anna Kim</strong> left the group <b>Chess Club</b>
@@ -100,6 +99,7 @@
       </div>
 
     </section>
+
   </main>
 
   <footer class="attribution">
@@ -108,7 +108,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
