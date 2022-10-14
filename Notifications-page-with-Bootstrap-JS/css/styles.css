@@ -15,16 +15,16 @@ h1 {
 }
 
 i {
-    color: hsl(1, 90%, 64%);
-    font-size: 0.625rem;
+  color: hsl(1, 90%, 64%);
+  font-size: 0.625rem;
 }
 
 .container {
   width: 42rem;
-    height: 52rem;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 1.25rem;
+  height: 52rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1.25rem;
 }
 
 .notification-container {
@@ -73,6 +73,7 @@ i {
 .red-dot {
   margin-left: 0.3125rem;
 }
+
 .name {
   color: hsl(224, 21%, 14%);
 }
@@ -85,7 +86,6 @@ i {
   width: 2.5rem;
   height: 2.5rem;
   margin: 0 1rem 0 0;
-  display: inline;
 }
 
 .comment {
@@ -96,7 +96,7 @@ i {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
-    right: 0.625rem;
+  right: 0.625rem;
 }
 
 .message {
