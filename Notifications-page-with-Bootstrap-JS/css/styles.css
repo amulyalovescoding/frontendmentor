@@ -9,18 +9,14 @@ body {
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 800;
   color: hsl(224, 21%, 14%);
 }
 
-span {
-
-}
-
 i {
     color: hsl(1, 90%, 64%);
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .container {
@@ -28,22 +24,21 @@ i {
     height: 52rem;
     padding: 2rem;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .notification-container {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .highlight {
   color: #fff;
   background-color: hsl(219, 85%, 26%);
-  border-radius: 5px;
-  padding: 0 7px;
+  border-radius: 0.3125rem;
+  padding: 0 0.4375rem;
 }
 
 .read {
@@ -60,10 +55,10 @@ i {
   flex-direction: row;
   color: hsl(219, 14%, 63%);
   border-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background-color: hsl(210, 60%, 98%);
-  margin-bottom: 10px;
-  padding-top: 10px;
+  margin-bottom: 0.625rem;
+  padding-top: 0.625rem;
 }
 
 .card:hover {
@@ -76,7 +71,7 @@ i {
 }
 
 .red-dot {
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 .name {
   color: hsl(224, 21%, 14%);
@@ -87,8 +82,8 @@ i {
 }
 
 .profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 0 1rem 0 0;
   display: inline;
 }
@@ -98,30 +93,19 @@ i {
 }
 
 .chess-pic {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
-    right: 10px;
+    right: 0.625rem;
 }
 
 .message {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .light {
   font-size: small;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .attribution {
   color: #BFBFBF;
