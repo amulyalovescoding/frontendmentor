@@ -52,9 +52,13 @@ function calTip() {
 }
 
 resetButton.addEventListener('click', () => {
-  billAmount.value = 0.0;
-  calculate();
+  billAmount.value = "0.0";
+  bill = 0;
   tip = 0;
   persons = 1;
   tipSelected[2].click();
+  tipAmountPerPerson.innerText = "0.00";
+  totalAmountPerPerson.innerText = "0.00";
+  noOfPersons.value = "1";
+  calculate();
 });
