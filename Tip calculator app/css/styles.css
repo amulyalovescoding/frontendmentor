@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  text-align: left;
+}
+
+section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 900px;
+}
+
+input {
+  text-align: right;
+  width: 100%;
+}
+
+.top-heading {
+  text-align: center;
+}
+
+.calculator-container {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.display-container {
+  background-color: hsl(183, 100%, 15%);
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.sub-heading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tip-button, #custom-tip, .reset-btn {
+  font-size: 20px;
+  padding: 10px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+}
+
+.tip-button, #custom-tip {
+  margin: 0.3rem;
+  max-width: 7.5rem;
+}
+
+.tip-button:focus {
+  background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.reset-container {
+  padding-top: 8rem;
+
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.big-font {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
