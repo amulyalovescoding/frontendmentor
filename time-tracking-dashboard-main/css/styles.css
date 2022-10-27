@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+}
+
+section {
+  height: 100%;
+}
+
+h1 {}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.mousePointerChange, .front-box {
+  cursor: pointer;
+}
+
+.profile-box {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.time-box {
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.profile-front-box {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 2rem;
+  /* position: absolute; */
+  width: 250px;
+  z-index: +2;
+}
+
+.profile-front-box h1 {
+  margin-bottom: 2rem;
+}
+
+.dp-img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  margin-bottom: 22px;
+}
+
+.profile-bg-box {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  /* position: absolute; */
+  /* top: 185px; */
+  padding: 10.5rem 2rem 2rem;
+  /* margin-top: 10px; */
+  /* margin-bottom: 0px; */
+  width: 250px;
+  transform: translateY(-10em);
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.box-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg-box .bg-img {
+  margin-top: 0;
+  margin-left: 150px;
+  margin-top: -5px;
+}
+
+.bg-box {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+}
+
+.front-box {
+  padding: 1rem;
+  position: absolute;
+  left: 24px;
+  top: 45px;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.front-box h2 {
+  display: inline-block;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  position: relative;
+  max-height: 250px;
+
+}
+
+.work .bg-box {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play .bg-box {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study .bg-box {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise .bg-box {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social .bg-box {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care .bg-box {
+  background-color: hsl(43, 84%, 65%);
+}
+
+/* footer section */
+.attribution {
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
