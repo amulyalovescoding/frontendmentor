@@ -9,7 +9,7 @@ const daily = document.querySelector('.daily');
 const weekly = document.querySelector('.weekly');
 const monthly = document.querySelector('.monthly');
 
-const url = "https://raw.githubusercontent.com/amulyalovescoding/frontendmentor/main/data.json";
+const url = "https://raw.githubusercontent.com/amulyalovescoding/frontendmentor/main/time-tracking-dashboard-main/data.json";
 // const dataJSON = fetch(url).then(response => response.json()).then(data =>{
 //   return data;
 // });
