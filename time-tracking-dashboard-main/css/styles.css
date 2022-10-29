@@ -9,13 +9,9 @@ body {
   color: #fff;
 }
 
-section {}
-
 section {
   height: 100%;
 }
-
-h1 {}
 
 h2 {
   font-size: 16px;
@@ -168,10 +164,6 @@ p {
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    /* height: 200vh; */
-  }
-
   main {
     height: 200vh;
   }
