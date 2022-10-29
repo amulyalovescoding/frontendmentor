@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <main class="my-5 p-5 container">
+
+    <section class="row">
+
+      <div class="balance-container col-12 row">
+
+        <div class="col-6">
+          <h3>My balance</h3>
+          <h3>$921.48</h3>
+        </div>
+        <div class="col-6">
+          <img src="./images/logo.svg" alt="" aria-hidden="true">
+        </div>
+      </div>
+
+      <div class="data-container col-12">
+
+        <h1>Spending - Last 7 days</h1>
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        mon
+        tue
+        wed
+        thu
+        fri
+        sat
+        sun
+
+        <hr>
+
+        <div class="row">
+
+          <div class="col-6">
+            Total this month
+            $478.33
+          </div>
+
+          <div class="col-6">
+            +2.4%
+            from last month
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/amulyalovescoding">Amulya Prakash</a>.
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
