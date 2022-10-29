@@ -7,12 +7,9 @@ body {
   background-color: hsl(226, 43%, 10%);
   font-family: 'Rubik', sans-serif;
   color: #fff;
-  height: 100vh;
 }
 
-main {
-  height: 100vh;
-}
+section {}
 
 section {
   height: 100%;
@@ -25,7 +22,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+p {
+  color: hsl(236, 100%, 87%);
 }
 
 .mousePointerChange, .front-box {
@@ -48,38 +50,52 @@ h3 {
 .profile-front-box {
   background-color: hsl(246, 80%, 60%);
   border-radius: 15px;
-  padding: 2rem;
-  /* position: absolute; */
-  width: 250px;
+  padding: 2.5rem;
+  height: 320px;
+  width: 260px;
   z-index: +2;
 }
 
 .profile-front-box h1 {
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .dp-img {
   border: 2px solid #fff;
   border-radius: 50%;
   width: 60px;
-  margin-bottom: 22px;
+  padding: 0;
+  height: 60px;
 }
 
 .profile-bg-box {
   background-color: hsl(235, 46%, 20%);
   border-radius: 15px;
-  /* position: absolute; */
-  /* top: 185px; */
-  padding: 10.5rem 2rem 2rem;
-  /* margin-top: 10px; */
-  /* margin-bottom: 0px; */
-  width: 250px;
-  transform: translateY(-10em);
+  padding: 6rem 2.5rem 2.5rem;
+  height: 245px;
+  width: 260px;
+  transform: translateY(-3em);
+}
+
+.profile-front-box br {
+  display: block;
+}
+
+.profile-bg-box a {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: hsl(235, 45%, 61%);
+}
+
+.profile-bg-box a:hover {
+  color: #fff;
 }
 
 .box {
-  width: 250px;
-  height: 150px;
+  width: 260px;
+  height: 190px;
   border-radius: 15px;
 }
 
@@ -91,7 +107,7 @@ h3 {
 
 .bg-box .bg-img {
   margin-top: 0;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-top: -5px;
 }
 
@@ -113,6 +129,10 @@ h3 {
   display: inline-block;
 }
 
+.front-box:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
 .work,
 .play,
 .study,
@@ -121,7 +141,6 @@ h3 {
 .self-care {
   position: relative;
   max-height: 250px;
-
 }
 
 .work .bg-box {
@@ -146,6 +165,74 @@ h3 {
 
 .self-care .bg-box {
   background-color: hsl(43, 84%, 65%);
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    /* height: 200vh; */
+  }
+
+  main {
+    height: 200vh;
+  }
+
+  .profile-box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 200px;
+  }
+
+  .profile-front-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 120px;
+    padding: 24px;
+  }
+
+  .profile-bg-box {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    padding: 24px;
+    transform: translateY(5.5em);
+    padding-top: 48px;
+    text-align: center;
+  }
+
+  .box {
+    width: 300px;
+    height: 120px;
+  }
+
+  .profile-bg-box a {
+    margin: auto 5px;
+  }
+
+  .profile-bg-box br {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .profile-front-box br {
+    display: none;
+  }
+
+  .time-box {
+    display: flex;
+    height: 170vh;
+    margin: auto;
+    width: 20rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
 }
 
 /* footer section */
