@@ -12,27 +12,76 @@ body {
 section {
   flex-direction: column;
   align-items: center;
+  max-width: 25rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-
-
-
+p {
+  margin-bottom: 0;
+}
 
 .balance-container {
   display: flex;
   flex-direction: row;
   border-radius: 1rem;
   background-color: hsl(10, 79%, 65%);
-  padding: 2rem;
-  max-width: 600px;
+  padding: 1.5rem;
+  max-width: 37.5rem;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
-.data-container {
-  max-width: 600px;
+.balance-container p {
+  color: hsl(27, 66%, 92%);
+  font-weight: 400;
+}
+
+.balance-container h3 {
+  color: hsl(33, 100%, 98%);
+  font-weight: 700;
+}
+
+.chart-container {
+  max-width: 37.5rem;
   background-color: hsl(33, 100%, 98%);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+.chart-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.data-container p {
+  color: hsl(28, 10%, 53%);
+  font-size: 0.8125rem;
+}
+
+.data-container h2 {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.data-container h4 {
+  margin: 0.5rem 0 0 0;
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.percentage-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* footer section */
