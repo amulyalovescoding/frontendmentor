@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+  height: 50vh;
+}
+
+main {
+  width: 550px !important;
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  margin-top: 25%;
+  box-shadow: 2px 2px 40px hsl(218, 23%, 12%);
+}
+
+h1 {
+  color: hsl(150, 100%, 66%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+picture img {
+  margin: 1.5rem 0;
+}
+
+.dice-container {
+  padding: 1rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -1.7rem;
+  left: 250px;
+}
+
+.dice-container:hover {
+  box-shadow: 2px 2px 20px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 992px) {
+  main {
+    width: 450px !important;
+  }
+
+  .dice-container {
+    position: absolute;
+    bottom: -1.7rem;
+    left: 200px;
+  }
+}
+
+/* footer section */
+.attribution {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
