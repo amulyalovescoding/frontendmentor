@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  max-height: 100vh;
+}
+
+h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  line-height: 0.9;
+  margin-top: 6rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+nav .navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navigation-toggler {
+  display: none;
+  z-index: 2;
+  border: 0;
+  background-color: #fff;
+}
+
+.login-btns-container {
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: #fff;
+  font-weight: 700;
+  padding: 7rem 1.5rem;
+  width: 60%;
+  height: 100vh;
+  text-align: left;
+  box-shadow: -15.3125rem 0rem 15.625rem rgb(0 0 0 / 39%);
+}
+
+.login-btns-container-mobile button {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+button.btn-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 8%);
+}
+
+.content-container {
+  padding: 2rem;
+}
+
+picture img {
+  max-width: 100%;
+}
+
+.learn-more-btn {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+.brand-container {
+  margin-top: auto;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 62rem) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .navigation-toggler {
+    display: block;
+  }
+
+  .content-container .learn-more-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  picture {
+    padding: 0 !important;
+    width: 100%;
+    order: -1;
+  }
+}
+
+/* footer section */
+.attribution {
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
