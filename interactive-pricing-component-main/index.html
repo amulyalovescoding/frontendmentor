@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="row m-5">
+
+      <div class="top-container col-12">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="pricing-container col-12 row p-4 shadow">
+        <div class="views-container col-lg-6">
+          <h3 class="page-views"><span class="pageview-count"></span>Pageviews</h3>
+        </div>
+        <div class="amount-container col-lg-6 visible">
+          <h2 class="inline">$<span class="amount"></span></h2>
+          <p class="inline">&nbsp; /month</p>
+        </div>
+        <div class="slider-container col-12">
+          <label for="customRange3" class="form-label"></label>
+          <input type="range" class="slider form-range" min="8" max="24" step="4" id="customRange3">
+        </div>
+        <div class="amount-container col-12 hidden">
+          <h2 class="inline">$<span class="amount"></span></h2>
+          <p class="inline">&nbsp; /month</p>
+        </div>
+        <div class="range-container col-12">
+          <label class="form-check-label" for="flexSwitchCheckDefault">
+            <p class="inline">
+              Monthly Billing &nbsp;
+            </p>
+          </label>
+          <div class="switch-button form-check form-switch">
+            <input class="discount-switch form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">
+              <p class="inline">
+                Yearly Billing &nbsp;
+              </p> <span class="discount">25%<span class="visible"> discount</span></span>
+            </label>
+          </div>
+
+        </div>
+        <hr>
+        <div class="bottom-container col-12 row">
+          <div class="bottom-left-container col-md-6">
+            <p><img src="./images/icon-check.svg" alt="" aria-haspopup="true">&nbsp; Unlimited websites</p>
+            <p><img src="./images/icon-check.svg" alt="" aria-haspopup="true">&nbsp; 100% data ownership</p>
+            <p><img src="./images/icon-check.svg" alt="" aria-haspopup="true">&nbsp; Email reports</p>
+          </div>
+
+          <div class="bottom-right-container col-md-6">
+            <button type="button" name="button">Start my trial</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/amulyalovescoding">Amulya Prakash</a>.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
