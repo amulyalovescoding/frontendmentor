@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(230, 17%, 14%);
+  font-family: 'Inter', sans-serif;
+}
+
+hr {
+  width: 90%;
+  display: none;
+}
+
+.growth {
+  color: hsl(163, 72%, 41%);
+}
+
+.decline {
+  color: hsl(356, 69%, 56%);
+}
+
+/* top section */
+.top-container {
+  justify-content: space-evenly;
+}
+
+.top-title-box, .mode-changer {
+  padding: 0;
+}
+
+.top-title-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.top-title-container p {
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+}
+
+.mode-changer {
+  align-content: center;
+}
+
+.mode-changer p {
+  text-align: left;
+}
+
+.mode-changer .check-label {
+  display: none;
+}
+
+.top-content-container {
+  justify-content: space-between;
+}
+
+.square-box {
+  background-color: hsl(227, 47%, 96%);
+  text-align: center;
+  border-radius: 6px;
+  width: 260px;
+  height: 200px;
+  margin-bottom: 1rem;
+  padding: 30px 20px 20px;
+}
+
+.square-box:hover {
+  background-color: hsl(227, 41%, 90%);
+  cursor: pointer;
+}
+
+.square-box h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.square-box h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(230, 17%, 14%);
+}
+
+.square-box h5 {
+  color: hsl(228, 12%, 44%);
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.square-box p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.facebook {
+  border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+  border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: orange;
+}
+
+.youtube {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+/* bottom section */
+.bottom-container {
+  justify-content: space-around;
+}
+
+.bottom-title-container, .bottom-title-box {
+  padding-left: 0.26rem;
+}
+
+.bottom-title-box h2 {
+  color: hsl(228, 12%, 44%);
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-content-container {
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.rectangle-box {
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 6px;
+  width: 260px;
+  height: 125px;
+  margin-bottom: 35px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rectangle-box:hover {
+  background-color: hsl(227, 41%, 90%);
+  cursor: pointer;
+}
+
+.rectangle-title-container {
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.rectangle-title-container,
+.rectangle-title-container h3,
+.rectangle-content-container,
+.logo-container {
+  padding: 0;
+}
+
+.rectangle-title-container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+  text-align: left;
+}
+
+.rectangle-content-container {
+  flex-direction: row;
+  align-content: flex-end;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.rectangle-content-container h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.rectangle-content-container p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+/* footer section */
+.attribution {
+  width: 100%;
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+p.dark {
+  color: hsl(228, 34%, 66%) !important;
+}
+
+.dark-mode-changer p, h2.dark, h4.dark {
+  color: hsl(0, 0%, 100%);
+}
+
+.square-box.dark, .rectangle-box.dark {
+  background-color: hsl(228, 28%, 20%) !important;
+}
+
+.square-box.dark:hover, .rectangle-box.dark:hover {
+  background-color: hsl(228, 28%, 30%) !important;
+  cursor: pointer;
+}
+
+h3.dark {
+  color: hsl(228, 34%, 66%) !important;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  hr {
+    display: block;
+    width: 90% !important;
+  }
+
+  .top-title-container, .bottom-title-container {
+    padding-left: 3.5rem;
+  }
+
+  .top-title-container h1, .bottom-title-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .top-content-container, .bottom-content-container {
+    justify-content: space-around;
+  }
+
+  .mode-changer .form-switch {
+    display: flex;
+    padding-left: 2.5em;
+    justify-content: flex-end;
+  }
+}
