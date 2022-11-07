@@ -3,29 +3,90 @@
   padding: 0;
 }
 
+body {
+  text-align: center;
+}
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
 
+h2 {
+  color: hsl(240, 38%, 20%);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 
+p {
+  color: hsl(240, 18%, 77%);
+  font-size: 1.3;
+  font-weight: 500;
+}
 
+.hidden {
+  display: none;
+}
 
+.image-container {
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
 
+.image-container .profile-img1,
+.image-container .profile-img2 {
+  border-radius: 0.5rem;
+  margin: 3rem;
+  width: 80%;
+  box-shadow: 10px 10px 30px #BFBFBF;
+}
 
+.profile-nav-btn {
+  position: absolute;
+  left: 37.5%;
+  right: auto;
+  bottom: 25px;
+}
 
+.profile-nav-btn .prev-btn {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  width: 60px;
+  height: 50px;
+}
 
+.profile-nav-btn .next-btn {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  width: 60px;
+  height: 50px;
+}
 
+.image-container .prev-btn-img,
+.image-container .next-btn-img {
+  margin-bottom: 3px;
+  width: 12px;
+  height: 14px;
+}
 
+.image-container .prev-btn-img {
+  padding-right: 2px !important;
+}
 
+.image-container .next-btn-img {
+  padding-left: 2px !important;
+}
 
-
-
-
-
-
-
-
-
-
-
+.content-container {
+  padding: 2.5rem;
+  background-image: url("../images/pattern-quotes.svg"), url("../images/pattern-curve.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: top, bottom;
+}
 
 /* footer section */
 .attribution {
@@ -44,4 +105,49 @@
 .attribution a:hover {
   color: hsl(154, 59%, 51%);
   background-color: #fff;
+}
+
+/* media query */
+@media (min-width:764px) {
+  body {
+    max-width: 100% !important;
+    height: 100vh;
+    text-align: left;
+  }
+
+  main {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    z-index: +2;
+    width: 650px;
+  }
+
+  h2, p {
+    display: inline-block;
+  }
+
+  .profile-nav-btn {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .content-container {
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 10% 0 10% 15%;
+  }
+
+  .profile-1, .profile-2 {
+    position: absolute;
+  }
+
+  .profile-nav-btn {
+    left: 15%;
+    right: auto;
+    bottom: 10%;
+  }
 }
