@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./starter-code/assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;500;700&family=Bellefair&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/destination.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navigation-bar navbar navbar-expand-md">
+      <div class="container-fluid pe-0">
+        <a class="navbar-brand ms-5" href="#"><img src="./starter-code/assets/shared/logo.svg" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img src="./starter-code/assets/shared/icon-hamburger.svg" /></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"><strong>00</strong> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./destination-moon.html"><strong>01</strong> Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><strong>02</strong> Crew</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><strong>03</strong> Technology</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="row">
+    <section class="left-container col-lg-6">
+      <h1>01 Pick your destination</h1>
+
+      <img class="planet-img" src="./starter-code/assets/destination/image-moon.webp" alt="">
+    </section>
+
+    <section class="right-container col-lg-6">
+      <div class="">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="moon nav-link active" aria-current="page" href="#">Moon</a>
+          </li>
+          <li class="nav-item">
+            <a class="mars nav-link" href="#">Mars</a>
+          </li>
+          <li class="nav-item">
+            <a class="europa nav-link" href="#">Europa</a>
+          </li>
+          <li class="nav-item">
+            <a class="titan nav-link" href="#">Titan</a>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="planet-name">Moon</h2>
+      <p class="planet-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+      regain perspective and come back refreshed. While you’re there, take in some history
+      by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      <hr>
+      <div class="row">
+        <div class="col-6">
+          <h3>Avg. distance</h3>
+          <h4 class="distance">384,400 km</h4>
+        </div>
+
+        <div class="col-6">
+          <h3>Est. travel time</h3>
+          <h4 class="time">3 days</h4>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/amulyalovescoding">Amulya Prakash</a>.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
