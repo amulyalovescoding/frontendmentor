@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../starter-code/assets/technology/background-technology-desktop.jpg');
+  text-align: left;
+}
+
+main {
+  display: flex;
+}
+
+h1 {
+  margin-bottom: 8rem;
+}
+
+h2 {
+  color: hsl(231, 77%, 90%);
+  font-size: 16px;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  color: #fff;
+  font-family: 'Bellefair', serif;
+  font-size: 53px;
+  font-weight: 500;
+
+}
+
+p {
+  padding-left: 5px !important;
+  padding-bottom: 2.5rem;
+}
+
+span {
+  color: #aaa;
+}
+
+.left-container {
+  padding: 0 0 0 10%;
+}
+
+.right-container {
+  padding-left: 7rem;
+  position: absolute;
+  right: 0;
+}
+
+.technology-select input {
+  display: none;
+}
+
+.technology-select label {
+  border-radius: 50%;
+  border-color: #fff;
+  border-width: 1rem;
+  background: transparent;
+  color: #fff;
+  font-size: 32px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  padding-top: 13px;
+}
+
+input[type=radio]:checked+label {
+  background-color: #fff;
+  color: #000;
+}

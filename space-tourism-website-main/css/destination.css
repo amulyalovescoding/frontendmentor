@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,41 @@ main {
   display: flex;
 }
 
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: 'Bellefair', serif;
+  color: #fff;
+}
+
+p {
+  padding-left: 5px !important;
+  padding-bottom: 2.5rem;
+}
+
+span {
+  color: #aaa;
+}
 
 .left-container {
-    padding: 0 10%;
+  padding: 0 10%;
+}
+
+.right-container {
+  padding-left: 11rem;
+}
+
+.nav-planet {
+  padding-left: 5px !important;
 }

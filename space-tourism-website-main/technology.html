@@ -19,6 +19,7 @@
 
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/technology.css">
 </head>
 
 <body>
@@ -26,9 +27,9 @@
   <header>
     <nav class="navigation-bar navbar navbar-expand-md">
       <div class="container-fluid pe-0">
-        <a class="navbar-brand ms-5" href="#"><img src="./starter-code/assets/shared/logo.svg"/></a>
+        <a class="navbar-brand ms-5" href="#"><img src="./starter-code/assets/shared/logo.svg" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><img src="./starter-code/assets/shared/icon-hamburger.svg" /></span>
+          <img class="navbar-toggler-icon" src="./starter-code/assets/shared/icon-hamburger.svg" />
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-lg-4">
@@ -52,19 +53,32 @@
 
   <main class="row">
     <section class="left-container col-lg-6">
-      <h1>  So, you want to travel to</h1>
+      <h1><span>03</span> Space launch 101</h1>
 
-      <h2>Space</h2>
+      <div class="row">
+        <div class="technology-select col-2">
+          <input type="radio" id="technology-vehicle" name="technology-navlink" checked="checked">
+          <label for="technology-vehicle" class="technology-vehicle">1</label>
+          <input type="radio" id="technology-spacepot" name="technology-navlink">
+          <label for="technology-spacepot" class="technology-spacepot">2</label>
+          <input type="radio" id="technology-capsule" name="technology-navlink">
+          <label for="technology-capsule" class="technology-capsule">3</label>
+        </div>
 
-      <p>Let’s face it; if you want to go to space, you might as well genuinely go to
-      outer space and not hover kind of on the edge of it. Well sit back, and relax
-      because we’ll give you a truly out of this world experience!</p>
+        <div class="col-10">
+          <h2>The terminology...</h2>
+          <h3 class="terminology-name">Launch vehicle</h3>
+          <p class="description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+          payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+          WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+          it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+      </div>
+
     </section>
 
-    <section class="right-container col-lg-6">
-      <div class="big-circle">
-        <button class="home__explore" type="button" name="button"><a href="#">Explore</a></button>
-      </div>
+    <section class="right-container col-lg-5">
+      <img class="technology-img" src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="">
     </section>
 
   </main>
@@ -76,7 +90,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="technology.js"></script>
 </body>
 
 </html>

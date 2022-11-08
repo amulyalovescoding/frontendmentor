@@ -32,11 +32,15 @@ p {
   text-transform: none;
   font-size: 18px;
   font-weight: 400;
-    line-height: 32px;
+  line-height: 32px;
 }
 
 .navigation-bar {
   height: 175px;
+}
+
+.navbar-toggler-icon {
+  margin-right: 1rem;
 }
 
 .navbar-nav {
@@ -45,12 +49,12 @@ p {
   padding-right: 130px;
 }
 
-.nav-link{
+.nav-link {
   color: #fff !important;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
   letter-spacing: 2.7px;
-    font-weight: 400;
+  font-weight: 400;
   padding: 10px 30px !important;
 }
 
@@ -124,7 +128,8 @@ font-family: 'Bellefair', serif; */
 
   .navigation-bar {
     height: 110px;
-}
+  }
+
   .navbar-toggler-icon {
     padding-right: 40px;
   }
@@ -170,7 +175,8 @@ font-family: 'Bellefair', serif; */
 
   .navigation-bar {
     height: 100px;
-}
+  }
+
   .navbar-toggler-icon {
     padding-right: 40px;
   }
@@ -184,5 +190,4 @@ font-family: 'Bellefair', serif; */
     width: 150px;
     height: 150px;
   }
-
 }
