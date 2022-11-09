@@ -10,31 +10,35 @@ body {
 }
 
 main {
-  width: 550px !important;
-  text-align: center;
+  align-items: center;
   background-color: hsl(217, 19%, 24%);
   border-radius: 1rem;
+  box-shadow: 0.125rem 0.125rem 2.5rem hsl(218, 23%, 12%);
+  display: flex;
+  margin-top: 15%;
   padding: 2rem;
   position: relative;
-  margin-top: 15%;
-  box-shadow: 2px 2px 40px hsl(218, 23%, 12%);
+  flex-direction: column;
+  text-align: center;
+  width: 34.375rem !important;
 }
 
 h1 {
   color: hsl(150, 100%, 66%);
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.3125rem;
   margin-bottom: 1rem;
 }
 
 p {
   color: hsl(193, 38%, 86%);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 picture img {
   margin: 1.5rem 0;
+  width: 90%;
 }
 
 .dice-container {
@@ -43,29 +47,15 @@ picture img {
   border-radius: 100%;
   position: absolute;
   bottom: -1.7rem;
-  left: 250px;
 }
 
 .dice-container:hover {
-  box-shadow: 2px 2px 20px hsl(150, 100%, 66%);
-}
-
-@media (max-width: 992px) {
-  main {
-    width: 450px !important;
-  }
-
-  .dice-container {
-    position: absolute;
-    bottom: -1.7rem;
-    left: 200px;
-  }
+  box-shadow: 0.125rem 0.125rem 1.25rem hsl(150, 100%, 66%);
 }
 
 /* footer section */
 .attribution {
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   color: #BFBFBF;
@@ -82,4 +72,70 @@ picture img {
 .attribution a:hover {
   color: hsl(154, 59%, 51%);
   background-color: #fff;
+}
+
+/* media query */
+@media (max-width: 62rem) {
+  main {
+    padding: 1.875rem 1.375rem !important;
+    width: 28.125rem !important;
+  }
+
+  h1 {
+    font-size: 0.6rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  picture img {
+    margin: 1rem 0;
+  }
+
+  .dice-container {
+    padding: 0.75rem;
+  }
+
+  .dice-container img {
+    width: 85%;
+  }
+}
+
+@media (max-width: 28.75rem) {
+  body {
+    width: 100%;
+  }
+
+  main {
+    padding: 1.75rem 1.125rem !important;
+    width: 90% !important;
+  }
+
+  h1 {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  picture img {
+    margin: 0.5rem 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 24.6875rem) {
+  main {
+    padding: 1.5625rem 1rem !important;
+  }
+
+  h1 {
+    font-size: 0.45rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
