@@ -8,32 +8,27 @@ body {
   text-align: left;
 }
 
-main {
-  display: flex;
-}
-
 h1 {
   margin-bottom: 8rem;
 }
 
 h2 {
   color: hsl(231, 77%, 90%);
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Barlow Condensed', sans-serif;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.1875rem;
 }
 
 h3 {
   color: #fff;
   font-family: 'Bellefair', serif;
-  font-size: 53px;
+  font-size: 3.3125rem;
   font-weight: 500;
-
 }
 
 p {
-  padding-left: 5px !important;
+  padding-left: 0.3125rem !important;
   padding-bottom: 2.5rem;
 }
 
@@ -61,16 +56,64 @@ span {
   border-width: 1rem;
   background: transparent;
   color: #fff;
-  font-size: 32px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  height: 80px;
-  width: 80px;
+  font-size: 2rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 1.25rem;
+  height: 5rem;
+  width: 5rem;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 0.8125rem;
 }
 
 input[type=radio]:checked+label {
   background-color: #fff;
   color: #000;
+}
+
+@media (max-width: 62rem) {
+  body {
+    background-image: url('../starter-code/assets/technology/background-technology-tablet.jpg');
+    background-size: cover;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  body {
+    background-image: url('../starter-code/assets/technology/background-technology-tablet.jpg');
+    background-size: cover;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    font-size: 2.8125rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+
+  .left-container {
+    padding: 0.625rem;
+  }
+
+  .right-container {
+    padding-left: 0;
+    position: static;
+  }
 }

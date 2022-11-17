@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
 h3 {
@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  padding-left: 5px !important;
+  padding-left: 0.3125rem !important;
   padding-bottom: 2.5rem;
 }
 
@@ -48,5 +48,57 @@ span {
 }
 
 .nav-planet {
-  padding-left: 5px !important;
+  padding-left: 0.3125rem !important;
+}
+
+@media (max-width: 62rem) {
+  body {
+    background-image: url('../starter-code/assets/destination/background-destination-tablet.jpg');
+    background-size: cover;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .right-container {
+    padding-left: 5rem;
+  }
+
+  .planet-img {
+    width: 120%;
+  }
+}
+
+@media (max-width: 48rem) {
+  body {
+    background-image: url('../starter-code/assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  ul.nav {
+    justify-content: center;
+  }
+
+  .planet-img {
+    width: 70%;
+  }
+
+  .right-container {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 26.875rem) {
+  body {
+    padding: 0.3125rem;
+  }
+
+  .right-container {
+    padding: 1rem;
+  }
 }
