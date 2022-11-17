@@ -10,12 +10,12 @@ const about = $('.about');
 
 const url = "https://raw.githubusercontent.com/amulyalovescoding/frontendmentor/main/space-tourism-website-main/starter-code/data.json";
 
-douglas.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+douglas.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.crew[0].images.webp);
+      image.attr('src', "./starter-code/" + data.crew[0].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.crew[0].images.png);
+      image.attr('src', "./starter-code/" + data.crew[0].images.png);
     }
     name.text(data.crew[0].name);
     post.text(data.crew[0].role);
@@ -23,12 +23,12 @@ douglas.click( function(){
   });
 });
 
-mark.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+mark.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.crew[1].images.webp);
+      image.attr('src', "./starter-code/" + data.crew[1].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.crew[1].images.png);
+      image.attr('src', "./starter-code/" + data.crew[1].images.png);
     }
     name.text(data.crew[1].name);
     post.text(data.crew[1].role);
@@ -36,12 +36,12 @@ mark.click( function(){
   });
 });
 
-victor.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+victor.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.crew[2].images.webp);
+      image.attr('src', "./starter-code/" + data.crew[2].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.crew[2].images.png);
+      image.attr('src', "./starter-code/" + data.crew[2].images.png);
     }
     name.text(data.crew[2].name);
     post.text(data.crew[2].role);
@@ -49,12 +49,12 @@ victor.click( function(){
   });
 });
 
-anousheh.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+anousheh.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.crew[3].images.webp);
+      image.attr('src', "./starter-code/" + data.crew[3].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.crew[3].images.png);
+      image.attr('src', "./starter-code/" + data.crew[3].images.png);
     }
     name.text(data.crew[3].name);
     post.text(data.crew[3].role);

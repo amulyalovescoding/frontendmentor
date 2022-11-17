@@ -11,12 +11,17 @@ const time = $('.time');
 
 const url = "https://raw.githubusercontent.com/amulyalovescoding/frontendmentor/main/space-tourism-website-main/starter-code/data.json";
 
-moon.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+$(function() {
+  moon.click();
+});
+
+
+moon.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.destinations[0].images.webp);
+      image.attr('src', "./starter-code/" + data.destinations[0].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.destinations[0].images.png);
+      image.attr('src', "./starter-code/" + data.destinations[0].images.png);
     }
     // image.attr('src', 'data.destinations[0].images.webp');
     planetName.text(data.destinations[0].name);
@@ -26,12 +31,12 @@ moon.click( function(){
   });
 });
 
-mars.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+mars.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.destinations[1].images.webp);
+      image.attr('src', "./starter-code/" + data.destinations[1].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.destinations[1].images.png);
+      image.attr('src', "./starter-code/" + data.destinations[1].images.png);
     }
     // image.attr('src', 'data.destinations[0].images.webp');
     planetName.text(data.destinations[1].name);
@@ -41,12 +46,12 @@ mars.click( function(){
   });
 });
 
-europa.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+europa.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.destinations[2].images.webp);
+      image.attr('src', "./starter-code/" + data.destinations[2].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.destinations[2].images.png);
+      image.attr('src', "./starter-code/" + data.destinations[2].images.png);
     }
     planetName.text(data.destinations[2].name);
     planetDescription.text(data.destinations[2].description);
@@ -55,12 +60,12 @@ europa.click( function(){
   });
 });
 
-titan.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+titan.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.destinations[3].images.webp);
+      image.attr('src', "./starter-code/" + data.destinations[3].images.webp);
     } else {
-      image.attr('src', "./starter-code/"+data.destinations[3].images.png);
+      image.attr('src', "./starter-code/" + data.destinations[3].images.png);
     }
     planetName.text(data.destinations[3].name);
     planetDescription.text(data.destinations[3].description);

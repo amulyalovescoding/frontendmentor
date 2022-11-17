@@ -8,36 +8,40 @@ const description = $('.description');
 
 const url = "https://raw.githubusercontent.com/amulyalovescoding/frontendmentor/main/space-tourism-website-main/starter-code/data.json";
 
-launchVehicle.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+$(function() {
+  launchVehicle.click();
+});
+
+launchVehicle.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.technology[0].images.portrait);
+      image.attr('src', "./starter-code/" + data.technology[0].images.portrait);
     } else {
-      image.attr('src', "./starter-code/"+data.technology[0].images.landscape);
+      image.attr('src', "./starter-code/" + data.technology[0].images.landscape);
     }
     name.text(data.technology[0].name);
     description.text(data.technology[0].description);
   });
 });
 
-spacepot.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+spacepot.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.technology[1].images.portrait);
+      image.attr('src', "./starter-code/" + data.technology[1].images.portrait);
     } else {
-      image.attr('src', "./starter-code/"+data.technology[1].images.landscape);
+      image.attr('src', "./starter-code/" + data.technology[1].images.landscape);
     }
     name.text(data.technology[1].name);
     description.text(data.technology[1].description);
   });
 });
 
-capsule.click( function(){
-  fetch(url).then(response => response.json()).then(data =>{
+capsule.click(function() {
+  fetch(url).then(response => response.json()).then(data => {
     if (window.innerWidth >= 992) {
-      image.attr('src', "./starter-code/"+data.technology[2].images.portrait);
+      image.attr('src', "./starter-code/" + data.technology[2].images.portrait);
     } else {
-      image.attr('src', "./starter-code/"+data.technology[2].images.landscape);
+      image.attr('src', "./starter-code/" + data.technology[2].images.landscape);
     }
     name.text(data.technology[2].name);
     description.text(data.technology[2].description);
