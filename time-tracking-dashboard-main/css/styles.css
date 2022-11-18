@@ -89,6 +89,12 @@ p {
   color: #fff;
 }
 
+a:focus,
+a:active {
+  color: #fff;
+  font-weight: bold;
+}
+
 .box {
   width: 260px;
   height: 190px;
@@ -163,6 +169,24 @@ p {
   background-color: hsl(43, 84%, 65%);
 }
 
+/* footer section */
+.attribution {
+  color: #BFBFBF;
+  font-size: 0.6875rem;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(248, 32%, 49%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(154, 59%, 51%);
+  background-color: #fff;
+}
+
 @media screen and (max-width: 992px) {
   main {
     height: 200vh;
@@ -225,22 +249,4 @@ p {
   h3 {
     font-size: 1.3rem;
   }
-}
-
-/* footer section */
-.attribution {
-  color: #BFBFBF;
-  font-size: 0.6875rem;
-  padding: 2.5rem 0 2.5rem 0;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(248, 32%, 49%);
-  text-decoration: none;
-}
-
-.attribution a:hover {
-  color: hsl(154, 59%, 51%);
-  background-color: #fff;
 }
